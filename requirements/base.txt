@@ -1,0 +1,9 @@
+aiocache==0.11.1
+aiohttp==3.6.2
+aiohttp-swagger==1.0.14
+gunicorn==20.0.4
+simple-settings==0.19.1
+tortoise-orm==0.16.6
+ujson==2.0.3
+uvloop==0.14.0
+

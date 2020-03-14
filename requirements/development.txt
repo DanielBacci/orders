@@ -1,0 +1,4 @@
+-r test.txt
+aiosqlite==0.11.0
+bump2version==0.5.11
+towncrier==19.2.0
