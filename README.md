@@ -1,5 +1,7 @@
 # Orders
 
+[![CircleCI](https://circleci.com/gh/DanielBacci/orders/tree/master.svg?style=svg&circle-token=a59b7776a920babc6a4d4b263019f265d1fa5f0f)](https://circleci.com/gh/DanielBacci/orders/tree/master)
+
 Order is a Python API for managing E-Commerce's orders.
 
 ## Installation

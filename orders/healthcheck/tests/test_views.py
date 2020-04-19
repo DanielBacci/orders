@@ -41,7 +41,7 @@ class TestMonitor:
         with mock.patch(
             'orders.healthcheck.views.MonitorView.VALIDATOR_CLASSES',
             [cache_mock]
-        ) as mock_caches:
+        ):
             async with client.get(url) as response:
                 assert response.status == 500
                 content = await response.json()

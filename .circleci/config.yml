@@ -1,0 +1,31 @@
+commands:
+  install-deps:
+    description: Install packages from requirements.txt via Pip.
+    parameters:
+      local:
+        default: true
+        description: Install packages for local user, not globally. Defaults to true.
+        type: boolean
+    steps:
+    - run:
+        command: make install-test
+        name: Install Dependencies
+jobs:
+  build:
+    executor: python/default
+    steps:
+      - checkout
+      - install-deps
+      - run:
+          command: make test-coverage
+          name: Test
+      - run:
+          command: make lint
+          name: Lint
+orbs:
+  python: circleci/python@0.1
+version: 2.1
+workflows:
+  main:
+    jobs:
+      - build
